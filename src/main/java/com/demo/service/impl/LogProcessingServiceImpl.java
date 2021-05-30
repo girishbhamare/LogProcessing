@@ -16,7 +16,6 @@ import com.demo.dao.LogProcessingDAO;
 import com.demo.dao.impl.LogProcessingDAOImpl;
 import com.demo.model.Event;
 import com.demo.service.LogProcessingService;
-import com.fasterxml.jackson.core.io.JsonEOFException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class LogProcessingServiceImpl implements LogProcessingService {
@@ -48,9 +47,7 @@ public class LogProcessingServiceImpl implements LogProcessingService {
 						diff = e.getTimestamp() - (map.get(e.getId()).get(0)).getTimestamp();
 
 					} else {
-
 						diff = (map.get(e.getId()).get(0)).getTimestamp() - e.getTimestamp();
-
 					}
 
 					log.debug("This is for inserting entry into database");
@@ -68,8 +65,7 @@ public class LogProcessingServiceImpl implements LogProcessingService {
 			log.error("Failure reading the file", e);
 			e.printStackTrace();
 		} finally {
-
-			// Always close the BufferedReader
+			
 			if (br != null) {
 				try {
 					br.close();
@@ -93,7 +89,5 @@ public class LogProcessingServiceImpl implements LogProcessingService {
 		fetchEventFromFile(filePath);
 
 	}
-	
-	
 
 }
