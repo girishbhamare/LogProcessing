@@ -1,0 +1,7 @@
+com\demo\service\impl\LogProcessingServiceImpl.class
+com\demo\Starter.class
+com\demo\model\Event.class
+com\demo\model\Event$State.class
+com\demo\dao\impl\LogProcessingDAOImpl.class
+com\demo\service\LogProcessingService.class
+com\demo\dao\LogProcessingDAO.class
