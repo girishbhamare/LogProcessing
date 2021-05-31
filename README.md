@@ -13,7 +13,7 @@ Execution Process:
 2. Run following commands in console 
 mvn clean install
 mvn test OR mvn -Dtest=AllUnitTests test
-3. From Eclipse : Either Run Starte.java /AllUnitTests as a Java Application
+3. From Eclipse : Either Run **Starter.java (com.demo) as a Java Application  OR AllUnitTests (com.demo.unittest) as Junit** 
 
 Testing Instructions
 --------------------
