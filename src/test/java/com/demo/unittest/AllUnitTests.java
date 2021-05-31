@@ -6,18 +6,16 @@ import java.security.InvalidParameterException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.MockitoAnnotations;
-import org.mockito.runners.MockitoJUnitRunner;
-
+import org.junit.runners.JUnit4;
 import com.demo.service.impl.LogProcessingServiceImpl;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(JUnit4.class)
 public class AllUnitTests {
 	LogProcessingServiceImpl lpsRunner = new LogProcessingServiceImpl();
 
 	@Before
 	public void setup() {
-		MockitoAnnotations.initMocks(this);
+		//Setup if required.
 	}
 
 	@Test
