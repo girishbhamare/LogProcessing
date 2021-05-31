@@ -10,9 +10,9 @@ Requirements
 Execution Process:
 -----------
 1. Clone this project : git@github.com:girishbhamare/LogProcessing.git or https://github.com/girishbhamare/LogProcessing.git
-2. Run following commands in console 
-mvn clean install
-mvn test OR mvn -Dtest=AllUnitTests test
+2. Run following commands in console <br />
+mvn clean install<br />
+mvn test OR mvn -Dtest=AllUnitTests test <br />
 3. From Eclipse : Either Run **Starter.java (com.demo) as a Java Application  OR AllUnitTests (com.demo.unittest) as Junit** 
 
 Testing Instructions
