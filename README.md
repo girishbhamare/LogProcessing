@@ -1,11 +1,11 @@
-Summary:
+**Summary**:
 Log Processing with Java 8 and  HSQL 
 
 Requirements
 ------------
-Java 8
-Open-Source Library: Junit,Jackson,slf4j
-Maven
+1.Java 8 <br />
+2.Open-Source Library: Junit,Jackson,slf4j <br />
+3.Maven (For Building and Execution)
 
 Execution Process:
 -----------
