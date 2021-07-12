@@ -44,3 +44,29 @@ The program should:
 In the example above, the event scsmbstgrb duration is 1401377495216 - 1491377495213 = 3ms
 The longest event is scsmbstgrc (1491377495218 - 1491377495210 = 8ms)
 
+----------------------------------------------------------------------------------------------------------
+#SonarQube Installation & Setup || Static Code Analysis || Code Coverage || Docker-Sonar
+To measure quality gates, static code analysis, and code bugs/vulnerabilities using SonarQube. 
+
+Install Docker Desktop on windows 10
+Create Docker-compose.yml under c:/SonarQube/docker-compose.yml
+Execute :docker-compose up -d.
+It will pull mentioned sonar container and db container.
+Once it is up and running hit http://localhost:9000/sessions/new.
+First time it will as Generate token.>> Select Java and Maven.
+Then it shows full maven command to execute.
+Go to any maven project  and add sonar-maven related plugins and dependencies. Please refer current pom.xml
+Execute following command
+ mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=94a80e5dc466727a43ffc02f51f91a6aa15c3d67 -Dsonar.test.inclusions=**/*Test*/** -DskipTests=true
+ 
+ Got to Sonar Dashboard and see all code analysis.
+ 
+
+
+
+
+
+
+
+
+
