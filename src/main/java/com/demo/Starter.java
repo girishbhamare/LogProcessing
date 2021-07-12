@@ -17,13 +17,10 @@ public class Starter {
 		LogProcessingService lps = new LogProcessingServiceImpl();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--Enter Vaild File Path--");
-		String filePath = sc.nextLine();
-
+		String filePath = sc.nextLine();	
 		log.info("Starting File Processing " + filePath);
-
 		lps.processLogFile(filePath);
 		log.info("Finishing File Processing");
-
 	}
 
 }
